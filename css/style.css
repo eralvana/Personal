@@ -15,7 +15,7 @@ hgroup{
 }
 body {
   text-align: center;
-  background: #888888;
+  background: #46433F;
 }
 p {
   text-align: justify;
@@ -26,10 +26,12 @@ p.reloj {
   margin: 10px 10px;
 }
 a:link {
+  color:#C30017;
   text-decoration:none;
 }
 a:hover{
-  color: #FF0000;
+  color: #0000FF;
+  font: bold;
 }
 .agrupar {
   width: 1000px;
@@ -37,29 +39,30 @@ a:hover{
   text-align: left;
 }
 .cabecera {
-  background: #0080FF;
-  border: 4px solid #000000;
+  background: #C30017;
+  border: 4px solid #1B151A;
   padding: 10px;
   margin: 20px;
   text-align: center;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  -moz-box-shadow: #000000 10px 10px 10px;
-  -webkit-box-shadow: #000000 10px 10px 10px;
-  box-shadow: #000000 10px 10px 10px;
+  -moz-box-shadow: #1B151A 10px 10px 10px;
+  -webkit-box-shadow: #1B151A 10px 10px 10px;
+  box-shadow: #1B151A 10px 10px 10px;
 }
 .menu {
-  background: #BDBDBD;
+  background: #1B151A;
+  border: 2px solid #C30017;
   padding: 5px 15px;
   margin: 20px;
   text-align: center;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  -moz-box-shadow: #000000 10px 10px 10px;
-  -webkit-box-shadow: #000000 10px 10px 10px;
-  box-shadow: #000000 10px 10px 10px;
+  /* -moz-box-shadow: #C30017 10px 10px 10px; */
+  /* -webkit-box-shadow: #C30017 10px 10px 10px; */
+  /* box-shadow: #C30017 10px 10px 10px; */
 }
 .menu li {
   display: inline-block;
@@ -69,30 +72,31 @@ a:hover{
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  border: 2px solid #000000;
-  background: #0080FF;
+  border: 2px solid #C30017;
+  background: #C30017;
   color: #FFFFFF;
 }
 .menu li.activo{
-  color: #0000FF;
-  background: #FFFFFF;
+  color: #000000;
+  background: #CCCCCC;
 }
 .menu li:hover{
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  -moz-box-shadow: #000000 10px 10px 10px;
-  -webkit-box-shadow: #000000 10px 10px 10px;
-  box-shadow: #000000 10px 10px 10px;
-  border: 2px solid #000000;
-  color: #0000FF;
-  background: #FFFFFF;
+  -moz-box-shadow: #1B151A 10px 10px 10px;
+  -webkit-box-shadow: #1B151A 10px 10px 10px;
+  box-shadow: #1B151A 10px 10px 10px;
+  border: 2px solid #C30017;
+  color: #000000;
+  background: #CCCCCC;
 }
 .seccion {
   float: left;
   width: 680px;
   margin: 10px;
   background: #CCCCCC;
+  border: 2px solid #1B151A;
   padding: 40px 40px;
   text-align: left;
   -moz-border-radius: 30px;
@@ -108,6 +112,7 @@ a:hover{
   margin: 10px 0px;
   padding: 10px;
   background: #CCCCCC;
+  border: 2px solid #1B151A;
   text-align: center;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -117,7 +122,8 @@ a:hover{
   clear: both;
   text-align: center;
   padding: 10px;
-  border-top: 4px solid #000000;
+  border-top: 4px solid #C30017;
+  color: #FFFFFF;
 }
 .wrapper {
   display: grid;
@@ -138,7 +144,7 @@ a:hover{
   text-align: center;
   margin: 10px auto;
 }
-.FIUP { 
+.FIUP {
   grid-column: 1;
   grid-row: 3;
   text-align: center;
@@ -154,7 +160,7 @@ a:hover{
   grid-row: 2;
   margin: 20px 10px;
 }
-.FIUPcursos { 
+.FIUPcursos {
   grid-column: 2;
   grid-row: 3;
   margin: 20px 10px;
