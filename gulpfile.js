@@ -64,7 +64,7 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrap, fontAwesome, jquery, jqueryEasing);
+  return merge(bootstrap, fontAwesome, jquery, jqueryEasing, jqueryUI);
 }
 
 // CSS task
