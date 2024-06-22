@@ -1,4 +1,4 @@
-baseURL: "https://eralvana.github.io/Personal"
+baseURL: "https://eralvana.github.io/"
 languageCode: "sp-mx"
 title: "Página personal de Ernesto Alejandro"
 theme: hugo-profile
@@ -56,7 +56,7 @@ params:
   title: "Página personal de Ernesto Alejandro"
   description: Página personal de Ernesto Alejandro
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/ico.png"
+  favicon: "/images/ico.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
