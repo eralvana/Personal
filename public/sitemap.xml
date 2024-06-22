@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/Personal/categories/</loc>
+    <loc>https://eralvana.github.io/Personal/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/Personal/</loc>
+    <loc>https://eralvana.github.io/Personal/</loc>
   </url><url>
-    <loc>http://localhost:1313/Personal/tags/</loc>
+    <loc>https://eralvana.github.io/Personal/tags/</loc>
   </url>
 </urlset>
