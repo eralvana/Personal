@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="generator" content="Hugo 0.127.0"><script src="/Personal/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=Personal/livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/ico.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+  
+
+
+<meta property="og:url" content="http://localhost:1313/Personal/">
+  <meta property="og:site_name" content="Página personal de Ernesto Alejandro">
+  <meta property="og:title" content="Página personal de Ernesto Alejandro">
+  <meta property="og:description" content="Página personal de Ernesto Alejandro">
+  <meta property="og:locale" content="sp_mx">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Página personal de Ernesto Alejandro">
+  <meta name="twitter:description" content="Página personal de Ernesto Alejandro">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #33DDFF;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #FFDD33;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content=Página&#32;personal&#32;de&#32;Ernesto&#32;Alejandro>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+Página personal de Ernesto Alejandro
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  false ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/Personal">
+                
+                <img src="/ico.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Página personal de Ernesto Alejandro
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/Personal#about" aria-label="about">
+                            Acerca de mi
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/Personal#education"
+                            aria-label="education">
+                            Formación académica
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/Personal#experience"
+                            aria-label="experience">
+                            Experiencia
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/Personal#contact"
+                            aria-label="contact">
+                            Contacto
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <span class="subtitle">
+                    Hola, mi nombre es
+                </span>
+                <h2>
+                    Ernesto Alejandro
+                </h2>
+                <h3>
+                    Vázquez Navarro
+                </h3>
+                <p class="hero-content">
+                    En este espacio comparto un poco sobre mí y mis pasiones. Soy alguien que dedica su vida a explorar y disfrutar de tres mundos fascinantes: las matemáticas, la enseñanza y la música.
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://github.com/eralvana"
+             target="_blank" 
+            class="btn social-icon"
+        >
+            <i class="fab fa-github"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/eralvana/"
+             target="_blank" 
+            class="btn social-icon"
+        >
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    
+
+    
+</span>
+</div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="/images/shino2019.jpeg"
+                            class="img-thumbnail mx-auto"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">Acerca de mi</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="/images/shinoFine.png" class="img-thumbnail mx-auto rounded-circle" alt="">
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                <p>Soy matemático de formación. Desde muy joven, me he sentido atraído por los desafíos intelectuales y la belleza de resolver problemas matemáticos. He tenido el privilegio de estudiar en la <a href="https://www.fciencias.unam.mx/">Facultad de Ciencias</a> la Licenciatura en Matemáticas y en el <a href="https://www.matem.unam.mx/">Instituto de Matemáticas</a> la Maestría en Ciencias Matemáticas, ambos de la <a href="https://www.unam.mx/">Universidad Nacional Autónoma de México</a>. En esta formación he profundizado en diversas áreas de la matemática como la teoría de conjuntos, topología, geometría, álgebra, teoría de gráficas, entre muchas otras. Actualmente <a href="https://www.matem.unam.mx/fsd/evazquez">realizo el Doctorado en Ciencias Matemáticas</a> bajo la tutoría del <a href="https://www.matem.unam.mx/fsd/roli">Dr. Javier Bracho Carpizo</a>, también en el <a href="https://www.matem.unam.mx/">Instituto de Matemáticas</a>.</p>
+<p>Además de ser matemático, también tengo una pasión por la enseñanza. He tenido la oportunidad de compartir mi conocimiento y entusiasmo por las matemáticas en diversas instituciones de educación superior. Para mí, la enseñanza va más allá de transmitir información; se trata de inspirar a los estudiantes, hacer que vean la belleza y la utilidad de las matemáticas en su vida diaria. Actualmente, <a href="https://www.fciencias.unam.mx/directorio/56439">soy profesor</a> de la <a href="https://www.fciencias.unam.mx/">Facultad de Ciencias</a> de la <a href="https://www.unam.mx/">Universidad Nacional Autónoma de México</a>.</p>
+<p>Pero no todo en mi vida gira en torno a las matemáticas y la enseñanza. También soy músico apasionado. Desde pequeño he explorado diferentes instrumentos y géneros musicales. La música no solo es una forma de expresión artística para mí, sino también una fuente de equilibrio y creatividad. He tenido el placer de participar en diferentes proyectos musicales, siendo el proyecto más desarollado la extinta banda <strong>R4</strong> (<a href="https://www.facebook.com/p/R4-Band-100068112730064/"><em>Facebook</em></a>, <a href="https://www.youtube.com/user/R4band"><em>YouTube</em></a>), donde he podido combinar mi amor por la precisión matemática con la emotividad y la improvisación musical.</p>
+<p>Además de la docencia, <a href="https://directorio.ine.mx/detalleDatosEmpleado.ife?idSistema=2&amp;idEmpleado=1085803">me desempeño profesionalmente</a> en el área de análisis de pruebas de soluciones informáticas en la <a href="https://ine.mx/estructura-ine/deppp/">Dirección Ejecutiva de Prerrogativas y Partidos Políticos</a> del <a href="https://ine.mx/">Instituto Nacional Electoral</a>.</p>
+
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Formación académica</h3>
+        <div class="row justify-content-center py-5">
+            
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2019 - actual</small>
+                                </div>
+                                <h5 class="card-title">Doctorado en Ciencias Matemáticas</h5>
+                                
+                                
+                                <a href="https://www.matem.unam.mx/fsd/evazquez" target="_blank">
+                                    <h6>
+                                    Instituto de Matemáticas, Universidad Nacional Autónoma de México
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    <p>Proyecto de investigación: Politopos hiperbólicos.</p>
+<ul>
+<li>Tutor: Dr. Javier Bracho Carpizo.</li>
+<li>Comité tutor:
+<ul>
+<li>Dra. Isabel Alicia Hubard Escalera.</li>
+<li>Dr. Daniel Pellicer Covarrubias.</li>
+</ul>
+</li>
+</ul>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2018</small>
+                                </div>
+                                <h5 class="card-title">Maestría en Ciencias Matemáticas</h5>
+                                
+                                
+                                <a href="https://www.matem.unam.mx/fsd/evazquez" target="_blank">
+                                    <h6>
+                                    Instituto de Matemáticas, Universidad Nacional Autónoma de México
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    <p>Tesina: El polinomio de Alexander: un invariante topol ́ogico de nudos.</p>
+<ul>
+<li>Tutor: Dr. Max Neumann Coto.</li>
+</ul>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2014</small>
+                                </div>
+                                <h5 class="card-title">Licenciatura en Matemáticas</h5>
+                                
+                                
+                                <a href="https://www.fciencias.unam.mx/" target="_blank">
+                                    <h6>
+                                    Facultad de Ciencias, Universidad Nacional Autónoma de México.
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    <p>Tesis: <a href="http://132.248.9.195/ptd2014/noviembre/0721845/Index.html">Estructuras geométricas en superficies</a>.</p>
+<ul>
+<li>Director de tesis: Dr. Max Neumann Coto.</li>
+</ul>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Experiencia</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='UNAM-FC-2005---actual-tab'
+                                data-bs-target='#pills-UNAM-FC-2005---actual'
+                                aria-controls='UNAM-FC-2005---actual' 
+                            >
+                                UNAM FC
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='INE-2024-03---actual-tab'
+                                data-bs-target='#pills-INE-2024-03---actual' 
+                                aria-controls='INE-2024-03---actual'
+                            >
+                                INE
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='UP-FI-2016---actual-tab'
+                                data-bs-target='#pills-UP-FI-2016---actual' 
+                                aria-controls='UP-FI-2016---actual'
+                            >
+                                UP FI
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='INEGI-2023-09---2023-12-tab'
+                                data-bs-target='#pills-INEGI-2023-09---2023-12' 
+                                aria-controls='INEGI-2023-09---2023-12'
+                            >
+                                INEGI
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='99minutos-2022-06---2023-02-tab'
+                                data-bs-target='#pills-99minutos-2022-06---2023-02' 
+                                aria-controls='99minutos-2022-06---2023-02'
+                            >
+                                99minutos
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='UNAM-DGAPA-2022-tab'
+                                data-bs-target='#pills-UNAM-DGAPA-2022' 
+                                aria-controls='UNAM-DGAPA-2022'
+                            >
+                                UNAM DGAPA
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='UNAM-ENCIT-2022-tab'
+                                data-bs-target='#pills-UNAM-ENCIT-2022' 
+                                aria-controls='UNAM-ENCIT-2022'
+                            >
+                                UNAM ENCIT
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='UNAM-FI-2017-tab'
+                                data-bs-target='#pills-UNAM-FI-2017' 
+                                aria-controls='UNAM-FI-2017'
+                            >
+                                UNAM FI
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-UNAM-FC-2005---actual'
+                            aria-labelledby='pills-UNAM-FC-2005---actual-tab'
+                        >
+                            <div>
+                                <span class="h4">Académico</span>
+                                <small>-</small>
+                                <a href="https://www.fciencias.unam.mx/directorio/56439" target="_blank">UNAM FC</a>
+                                <div class="pb-1">
+                                    <small>2005 - actual</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Miembro&#32;del&#32;personal&#32;académico&#32;de&#32;la&#32;Facultad&#32;de&#32;Ciencias,&#32;UNAM.
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            <p>Como miembro del personal académico de la Facultad de Ciencias (FC) de la Universidad Nacional Autónoma de México (UNAM), he tenido diversos nombramientos:</p>
+<ul>
+<li>Ayudante de Profesor Nivel A.</li>
+<li>Ayudante de Profesor Nivel B.</li>
+<li>Profesor de Asignatura Nivel A.</li>
+<li>Profesor de Asignatura Nivel B.</li>
+</ul>
+<p>He impartido los siguientes cursos:</p>
+<ul>
+<li>Álgebra Lineal I.</li>
+<li>Álgebra Lineal II.</li>
+<li>Álgebra Superior I.</li>
+<li>Álgebra Superior II.</li>
+<li>Cálculo Diferencial e Integral I.</li>
+<li>Cálculo Diferencial e Integral II.</li>
+<li>Cálculo Diferencial e Integral III.</li>
+<li>Cálculo Diferencial e Integral IV.</li>
+<li>Geometría Analítica I.</li>
+<li>Geometría Analítica II.</li>
+<li>Geometría Moderna I.</li>
+<li>Geometría Moderna II.</li>
+<li>Geometría Proyectiva.</li>
+<li>Gráficas y Juegos.</li>
+<li>Introducción a la Geometría Avanzada.</li>
+<li>Seminario de Análisis Combinatorio.
+<ul>
+<li>Tema: <em>Politopos convexos</em>.</li>
+</ul>
+</li>
+<li>Seminario de Geometría.
+<ul>
+<li>Tema: <em>Geometría euclideana bidimensional y su grupo de transformaciones</em>.</li>
+<li>Tema: <em>Geometría hiperbólica</em>.</li>
+<li>Tema: <em>Geometría hiperbólica bidimensional</em>.</li>
+<li>Tema: <em>Grupos de transformaciones para principiantes</em>.</li>
+<li>Tema: <em>Introducción a la Topología</em>.</li>
+<li>Tema: <em>Teselaciones en superficies y grupos cristalográficos</em>.</li>
+</ul>
+</li>
+<li>Seminario sobre Enseñanza de las Matemáticas I.
+<ul>
+<li>Tema:<em>Diseño de actividades para la enseñanza de Cálculo Diferencial e Integral I</em>.</li>
+</ul>
+</li>
+<li>Seminario de Topología.
+<ul>
+<li>Tema: <em>Superficies y 3-variedades</em>.</li>
+<li>Tema: <em>Teoría de nudos</em>.</li>
+</ul>
+</li>
+<li>Teoría de Gráficas.</li>
+<li>Teoría de Gráficas II.</li>
+<li>Topología I.</li>
+</ul>
+
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-INE-2024-03---actual'
+                            aria-labelledby='pills-INE-2024-03---actual-tab'
+                        >
+                            <div>
+                                <span class="h4">Profesional en Análisis de Pruebas de Soluciones Informáticas</span>
+                                <small>-</small>
+                                <a href="https://directorio.ine.mx/detalleDatosEmpleado.ife?idSistema=2&amp;idEmpleado=1085803" target="_blank">INE</a>
+                                
+                                <div class="pb-1">
+                                    <small>2024 03 - actual</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Profesional&#32;en&#32;Análisis&#32;de&#32;Pruebas&#32;de&#32;Soluciones&#32;Informáticas&#32;en&#32;INE.
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Como Profesional en Análisis de Pruebas de Soluciones Informáticas en el Departamento de Calidad de la Subdirección de Mantenimiento a Sistemas Informáticos de la Dirección de Procesos Tecnológicos perteneciente a la Dirección Ejecutiva de Prerrogativas y Partidos Políticos del Instituto Nacional Electoral (INE) he desempeñado diversas actividades, entre las que destacan:</p>
+<ul>
+<li>Definir el enfoque de pruebas y garantizar la satisfactoria incorporación de las soluciones informáticas a los sistemas.</li>
+<li>Participar en el proceso de pruebas en todas las fases del desarrollo (análisis, diseño, construcción e implementación) con el objetivo de que los sistemas informáticos cumplan con las especificaciones del producto y las necesidades del área usuaria.</li>
+<li>Definir y diseñar pruebas de caja blanca, caja negra, pruebas de estrés y pruebas de integración en diversas aplicaciones (acceso vía WEB o clientes de escritorio) y diferentes plataformas de sistemas operativos.</li>
+<li>Documentar y analizar los requerimientos solicitados por las áreas usuarias a los sistemas informáticos con el fin de definir las pruebas que se deben aplicar a los mismos.</li>
+<li>Diseñar y sistematizar las pruebas aplicables al desarrollo de los sistemas informáticos en diversas aplicaciones y sistemas operativos.</li>
+<li>Asegurar que se cumpla con los estándares de calidad de sistemas informáticos en diversas aplicaciones y sistemas operativos.</li>
+<li>Generar los documentos de resultados de las inspecciones y de las pruebas aplicadas.</li>
+<li>Revisar y asegurar que se hagan los ajustes necesarios que arrojen las pruebas en diversas aplicaciones y sistemas operativos.</li>
+<li>Recopilar y gestionar los datos de cada prueba.</li>
+<li>Realizar la evaluación continua de la calidad global de los sistemas y su interconexión como resultado de las actividades de prueba.</li>
+<li>Diseñar y elaborar las cargas de datos para pruebas de solución de información.</li>
+<li>Dar seguimiento a los entregables y documentos generados por el área de desarrollo de los sistemas que se realicen pruebas.</li>
+<li>Dar atención a los incidentes reportados por las áreas usuarias en los sistemas informáticos realizando las pruebas respectivas para asegurar que los ajustes realizados solucionen los incidentes.</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-UP-FI-2016---actual'
+                            aria-labelledby='pills-UP-FI-2016---actual-tab'
+                        >
+                            <div>
+                                <span class="h4">Académico</span>
+                                <small>-</small>
+                                <a href="https://www.up.edu.mx/educacion-universidad-facultad-de-ingenieria/" target="_blank">UP FI</a>
+                                
+                                <div class="pb-1">
+                                    <small>2016 - actual</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Miembro&#32;del&#32;personal&#32;académico&#32;de&#32;la&#32;Facultad&#32;de&#32;Ingeniería,&#32;UP.
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Como miembro del personal académico de la Facultad de Ingeniería (FI) de la Universidad Panamericana (UP), he tenido los nombramientos de Ayudante de Profesor y Profesor de Asignatura, he impartido los siguientes cursos:</p>
+<ul>
+<li>Álgebra.</li>
+<li>Álgebra Lineal.</li>
+<li>Cálculo Diferencial.</li>
+<li>Cálculo de Variaciones.</li>
+<li>Ecuaciones Diferenciales.</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-INEGI-2023-09---2023-12'
+                            aria-labelledby='pills-INEGI-2023-09---2023-12-tab'
+                        >
+                            <div>
+                                <span class="h4">Enlace de Verificación B</span>
+                                <small>-</small>
+                                <a href="https://inegi.org.mx/" target="_blank">INEGI</a>
+                                
+                                <div class="pb-1">
+                                    <small>2023 09 - 2023 12</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Enlace&#32;de&#32;Verificación&#32;B&#32;en&#32;INEGI.
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Como Enlace de Verificación B en el Departamento de Validación Vectorial de la Dirección de Modelos de Información Gubernamental perteneciente a la Dirección General de Estadísticas de Gobierno, Seguridad Pública y Justicia del Instituto Nacional de Estadística y Geografía (INEGI) he desempeñado diversas actividades, entre las que destacan:</p>
+<ul>
+<li>Desarrollar planteamientos y procesos de los modelos y métodos en la formulación de esquemas de trabajo vinculados al diagnóstico, automatización, simplificación, innovación de acciones conjuntas para los proyectos estadísticos.</li>
+<li>Seguimiento a los preparativos de la captación y a la integración de datos, así como a la clasificación y codificación de los datos recabados durante el levantamiento de información de los programas estadísticos.</li>
+<li>Análisis estadístico de los principales indicadores asociados a proyectos estadísticos.</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-99minutos-2022-06---2023-02'
+                            aria-labelledby='pills-99minutos-2022-06---2023-02-tab'
+                        >
+                            <div>
+                                <span class="h4">Analista de datos</span>
+                                <small>-</small>
+                                <a href="https://www.99minutos.com/" target="_blank">99minutos</a>
+                                
+                                <div class="pb-1">
+                                    <small>2022 06 - 2023 02</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Analista&#32;de&#32;datos&#32;en&#32;99&#32;minutos.
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Como Analista de datos en 99 minutos he tenido distintas actividades, entre las cuales se encuentran:</p>
+<ul>
+<li>Manejar de bases de datos utilizando <em>SQL</em>, <em>PostgreSQL</em> y <em>BigQuery</em> para la gestión y análisis de datos operativos.</li>
+<li>Crear y optimizar consultas <em>SQL</em> para extraer información relevante y realizar análisis profundos.</li>
+<li>Diseñar y desarrollar estructuras de datos para obtener un almacenamiento eficiente y acceso rápido a la información.</li>
+<li>Crear reportes y visualizaciones utilizando <em>Power BI</em> para presentar datos de manera clara y comprensible.</li>
+<li>Colaborar con equipos interdisciplinarios para entender y satisfacer las necesidades de análisis de datos.</li>
+<li>Participar en proyectos de integración y migración de datos, asegurando la integridad y consistencia de la información.</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-UNAM-DGAPA-2022'
+                            aria-labelledby='pills-UNAM-DGAPA-2022-tab'
+                        >
+                            <div>
+                                <span class="h4">Académico</span>
+                                <small>-</small>
+                                <a href="https://dgapa.unam.mx/index.php/fortalecimiento-a-la-docencia/pasd" target="_blank">UNAM DGAPA</a>
+                                
+                                <div class="pb-1">
+                                    <small>2022</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Miembro&#32;del&#32;personal&#32;académico&#32;de&#32;la&#32;Facultad&#32;de&#32;Ciencias,&#32;UNAM.
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Como miembro del personal académico de la Facultad de Ciencias (FC) de la Universidad Nacional Autónoma de México (UNAM) he impartido en el Programa de Actualización y Superación Docente (PASD) de la Dirección General de Asuntos del Personal Académico (DGAPA) de la UNAM los siguientes cursos:</p>
+<ul>
+<li>Un puente entre la Geometría y el Cálculo a través de las secciones cónicas.</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-UNAM-ENCIT-2022'
+                            aria-labelledby='pills-UNAM-ENCIT-2022-tab'
+                        >
+                            <div>
+                                <span class="h4">Académico</span>
+                                <small>-</small>
+                                <a href="https://www.encit.unam.mx/" target="_blank">UNAM ENCIT</a>
+                                
+                                <div class="pb-1">
+                                    <small>2022</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Miembro&#32;del&#32;personal&#32;académico&#32;de&#32;la&#32;Escuela&#32;Nacional&#32;de&#32;Ciencias&#32;de&#32;la&#32;Tierra,&#32;UNAM.
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Como miembro del personal académico de la Escuela Nacional de Ciencias de la Tierra (ENCIT) de la Universidad Nacional Autónoma de México (UNAM), he tenido el nombramiento de Profesor de Asignatura Nivel A y he impartido los siguientes cursos:</p>
+<ul>
+<li>Matemáticas (Licenciatura Geografía Aplicada).</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-UNAM-FI-2017'
+                            aria-labelledby='pills-UNAM-FI-2017-tab'
+                        >
+                            <div>
+                                <span class="h4">Académico</span>
+                                <small>-</small>
+                                <a href="https://www.ingenieria.unam.mx/" target="_blank">UNAM FI</a>
+                                
+                                <div class="pb-1">
+                                    <small>2017</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Miembro&#32;del&#32;personal&#32;académico&#32;de&#32;la&#32;Facultad&#32;de&#32;Ingeniería,&#32;UNAM.
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Como miembro del personal académico de la Facultad de Ingeniería (FI) de la Universidad Nacional Autónoma de México (UNAM), he tenido el nombramiento de Profesor de Asignatura y he impartido los siguientes cursos:</p>
+<ul>
+<li>Cálculo y Geometría Analítica.</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Contacto</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        Mi cuenta de correo está abierta para recibir cualquier mensaje. Si tienes alguna pregunta o simplemente quieres saludar, ¡haré todo lo posible para responderte!
+                    </div>
+                    
+                    <div class="text-center pt-3">
+                        <a 
+                            href='
+                                    mailto:eralvanamate@gmail.com
+                                  '
+                            target="_blank"
+                            class="btn"
+                        >
+                            Escribir correo electrónico
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="http://localhost:1313/Personal/" title="Página personal de Ernesto Alejandro">
+                        <img alt="Footer logo" src="/ico.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2024  Derechos Reservados
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+<!-- MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" integrity="sha384-M5jmNxKC9EVnuqeMwRHvFuYUE8Hhp0TgBruj/GZRkYtiMrCRgH7yvv5KY+Owi7TW" crossorigin="anonymous"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+</script>
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
