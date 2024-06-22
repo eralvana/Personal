@@ -1,5 +1,5 @@
 baseURL: "https://eralvana.github.io/Personal"
-languageCode: "sp"
+languageCode: "en-us"
 title: "Página personal de Ernesto Alejandro"
 theme: hugo-profile
 

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Página personal de Ernesto Alejandro</title>
-    <link>https://eralvana.github.io/</link>
+    <link>https://eralvana.github.io/Personal/</link>
     <description>Recent content on Página personal de Ernesto Alejandro</description>
     <generator>Hugo</generator>
     <language>sp</language>
-    <atom:link href="https://eralvana.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://eralvana.github.io/Personal/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
